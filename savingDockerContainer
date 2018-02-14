@@ -1,0 +1,29 @@
+There are following ways to persist container data:
+
+Docker volumes
+
+Docker commit
+
+a) create container from ubuntu image and run a bash terminal.
+
+   $ docker run -i -t ubuntu:14.04 /bin/bash
+b) Inside the terminal install curl
+
+   # apt-get update
+   # apt-get install curl
+c) Exit the container terminal
+
+   # exit
+d) Take a note of your container id by executing following command :
+
+   $ docker ps -a
+e) save container as new image
+
+   $ docker commit <container_id> new_image_name:tag_name(optional)
+f) verify that you can see your new image with curl installed.
+
+   $ docker images           
+
+   $ docker run -it new_image_name:tag_name bash
+      # which curl
+        /usr/bin/curl
