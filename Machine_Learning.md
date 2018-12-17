@@ -6,9 +6,9 @@ source: https://www.quora.com/What-is-regularization-in-machine-learning
 
 Generally, the use of ROC curves and precision-recall curves are as follows:
 
-`ROC curves should be used when there are roughly equal numbers of observations for each class.
-Precision-Recall curves should be used when there is a moderate to large class imbalance.
+## ROC curves should be used when there are roughly equal numbers of observations for each class.
+## Precision-Recall curves should be used when there is a moderate to large class imbalance.
 The reason for this recommendation is that ROC curves present an optimistic picture of the model on datasets with a class imbalance.
 
-However, ROC curves can present an overly optimistic view of an algorithm’s performance if there is a large skew in the class distribution. […] Precision-Recall (PR) curves, often used in Information Retrieval , have been cited as an alternative to ROC curves for tasks with a large skew in the class distribution.`
+## However, ROC curves can present an overly optimistic view of an algorithm’s performance if there is a large skew in the class distribution. […] Precision-Recall (PR) curves, often used in Information Retrieval , have been cited as an alternative to ROC curves for tasks with a large skew in the class distribution.`
 https://machinelearningmastery.com/roc-curves-and-precision-recall-curves-for-classification-in-python/
