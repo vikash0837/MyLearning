@@ -9,3 +9,11 @@ For specific lines:
 
 `:6,10s/foo/bar/g`
 Change each 'foo' to 'bar' for all lines from line 6 to line 10 inclusive.
+
+# to load xlsx file on pandasa and finding sheet names
+
+`xl = pd.ExcelFile('foo.xls')`
+
+`xl.sheet_names`  # see all sheet names
+
+`xl.parse(sheet_name)`  # read a specific sheet to DataFrame
